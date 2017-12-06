@@ -1,0 +1,28 @@
+<br>
+<br>
+<div class="container">
+<table class="table table-striped">
+<thead>
+  <tr>
+    <td>Serie</td>
+    <td>Folio</td>
+    <td>Fecha</td>
+    <td>Total</td>
+    <td></td>
+  </tr>
+  </thead>
+  <tbody>
+  {{#each model as |factura|}}
+  <tr>
+    <td>{{factura.serie}}</td>
+    <td>{{factura.folio}}</td>
+    <td>{{factura.fecha}}</td>
+    <td>{{factura.total}}</td>
+    <td></td>
+  </tr>
+  {{/each}}
+  </tbody>
+</table>
+</div>
+<br>
+<br>

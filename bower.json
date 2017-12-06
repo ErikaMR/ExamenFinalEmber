@@ -1,0 +1,6 @@
+{
+  "name": "examen",
+  "dependencies": {
+    "sweetalert2": "^6.1.0"
+  }
+}

@@ -1,0 +1,31 @@
+<div class="container">
+
+<div class="input-field col s6">
+          {{input id="fol" value=model.folio type="number" class="validate"}}
+          <label for="fol">Introduce el folio:</label>
+</div>
+<div class="input-field col s6">
+          {{input id="ser" value=model.serie type="string" class="validate"}}
+          <label for="ser">Introduce la serie:</label>
+</div>
+<div class="input-field col s6">
+		  <label>Introduce la fecha:</label>
+		  <br>
+          {{input id="fec" value=model.fecha type="date" class="validate"}}
+          
+</div>
+<div class="input-field col s6">
+          {{input placeholder="1=Tarjeta, 2=Transferencia" id="pag" value=model.formaPago type="number" class="validate"}}
+          <label for="pag">Introduce la forma de pago:</label>
+</div>
+<br>
+<a {{action 'nConcepto'}} class="waves-effect waves-light btn">Añadir Concepto</a>
+		<br>
+		{{#each model.conceptos as |concepto|}}
+		  {{crear-concepto concepto=concepto}}
+		{{/each}}
+		<br>
+<br>
+<br>
+<a {{action 'gFactura'}} class="waves-effect waves-light btn">Guardar factura</a>
+</div>

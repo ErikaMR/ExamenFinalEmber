@@ -1,0 +1,27 @@
+<div class="container">
+
+<div class="input-field col s6">
+          {{input value=concepto.descripcion type="string" class="validate"}}
+          <label for="des">Introduce la descripcion:</label>
+</div>
+<div class="input-field col s6">
+          {{input value=concepto.cantidad type="number" class="validate"}}
+          <label for="can">Introduce la cantidad:</label>
+</div>
+<div class="input-field col s6">
+          {{input value=concepto.precio type="number" class="validate"}}
+          <label for="pre">Introduce el precio:</label>
+</div>
+<div class="input-field col s6">
+          {{input value=concepto.descuento type="number" class="validate"}}
+          <label for="desc">Introduce el descuento:</label>
+</div>
+
+	    <p>
+	      <label><b>Importe = </b> {{concepto.importe}}</label>
+		    </p>
+		    <p>
+	      <label><b>Total = </b> {{concepto.total}}</label>
+	    </p>
+
+</div>
